@@ -1,10 +1,11 @@
 package net.visualia.tgnimpulsa;
 
+
 /**
  * Created by sfrias on 05/07/2016.
  */
 
-public class DoG {
+class DoG {
     private String Name;
     private String ownerName;
     private String skinColor;
@@ -13,26 +14,38 @@ public class DoG {
     private float weight;
 
     public DoG() {
+        setName("Rayo");
+        setOwnerName("Nubarrón");
+        setSkinColor("Blanco");
+        setBirthDate(4594964L);
+        setPlateNumber(15784);
+        setWeight(5.64f);
     }
 
-    public float getWeight() {
-        return this.weight;
-    }
-
-    public void setWeight(float weight) {
+    public DoG(String name,
+               String ownerName,
+               String skinColor,
+               long birthDate,
+               int plateNumber,
+               float weight) {
+        Name = name;
+        this.ownerName = ownerName;
+        this.skinColor = skinColor;
+        this.birthDate = birthDate;
+        this.plateNumber = plateNumber;
         this.weight = weight;
     }
 
     public String getName() {
-        return this.Name;
+        return Name;
     }
 
     public void setName(String name) {
-        this.Name = name;
+        Name = name;
     }
 
     public String getOwnerName() {
-        return this.ownerName;
+        return ownerName;
     }
 
     public void setOwnerName(String ownerName) {
@@ -40,7 +53,7 @@ public class DoG {
     }
 
     public String getSkinColor() {
-        return this.skinColor;
+        return skinColor;
     }
 
     public void setSkinColor(String skinColor) {
@@ -48,14 +61,26 @@ public class DoG {
     }
 
     public long getBirthDate() {
-        return 10L;
+        return birthDate;
+    }
+
+    public void setBirthDate(long birthDate) {
+        this.birthDate = birthDate;
     }
 
     public int getPlateNumber() {
-        return this.plateNumber;
+        return plateNumber;
     }
 
     public void setPlateNumber(int plateNumber) {
         this.plateNumber = plateNumber;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public void setWeight(float weight) {
+        this.weight = weight;
     }
 }
