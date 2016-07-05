@@ -12,6 +12,6 @@ public class Main {
         System.out.println("Name:"+doggy.getName());
         System.out.println("Owner:"+doggy.getOwnerName());
         System.out.println("ColorPelo:"+doggy.getSkinColor());
-        System.out.println(
+        System.out.println("")
     }
 }
