@@ -83,4 +83,15 @@ class DoG {
     public void setWeight(float weight) {
         this.weight = weight;
     }
+
+    public void ListSpecimen(DoG specimen){
+        System.out.println("Birth:"+specimen.getBirthDate());
+        System.out.println("Name:"+specimen.getName());
+        System.out.println("Owner:"+specimen.getOwnerName());
+        System.out.println("ColorPelo:"+specimen.getSkinColor());
+        System.out.println("Fecha Nacimiento:"+specimen.getBirthDate());
+        System.out.println("Matrícula:"+specimen.getPlateNumber());
+        System.out.println("Peso:"+specimen.getWeight());
+        System.out.println("----------------------");
+    }
 }
